@@ -1,0 +1,10 @@
+# Ignorar node_modules
+node_modules/
+
+# Ignorar archivos sensibles
+.env
+backend/db.js  # Contiene la contraseña de Postgres
+
+# Ignorar logs y temporales
+*.log
+.DS_Store
