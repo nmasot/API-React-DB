@@ -45,4 +45,5 @@ const sync = async () => {
     }
 };
 
-sync();
+// sync();
+module.exports = sync;

@@ -11,4 +11,13 @@ app.listen(PORT, () => {
     console.log(`Backend corriendo en http://localhost:${PORT}`);
 });
 
+// configuración y rutas...
+
+if (process.env.NODE_ENV !== 'test') {
+    const PORT = 5000;
+    app.listen(PORT, () => {
+        console.log(`Backend corriendo en http://localhost:${PORT}`);
+    });
+}
+
 module.exports = app;
